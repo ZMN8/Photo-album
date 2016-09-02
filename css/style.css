@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: text-bottom;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "微软雅黑";
+    color: #000000;
+    font-size: 14px;
+}
+
+.clearfix {*zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.box{padding:0 100px;position: relative;}
+.imgPlay{width:690px;height:580px;margin:60px auto 0;overflow: hidden;}
+.imgPlay img{width:690px;height:450px;position: absolute;bottom: 0;left: 50%;margin-left: -345px;}
+.imgPlay ul{width:100%;position:relative;}
+.imgPlay ul li{position:absolute;top:0;left:0;width:690px;height:450px;opacity: 0;}
+.leftIcon,.rightIcon{position: absolute;display: block;width:31px;height:63px;background:url("../images/icon.png") no-repeat;top:50%;margin-top: -31.5px;text-indent:-99em ;overflow: hidden;cursor: pointer;}
+.leftIcon{left:50%;margin-left: -500px; background-position: -189px -403px;}
+.rightIcon{right:50%;margin-right:-500px;background-position: -269px -403px;}
+.info{position:absolute;height:86px;width:690px;bottom:-92px;}
+.curPos{font-size: 30px;color: #379be9;line-height: 80px;}
+.allImg{font-size: 20px;color:#757575;line-height: 80px;}
+.text{padding-left: 30px;line-height: 20px;}
+.imgDIV{position:relative;padding-left:30px;height:105px;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;overflow: hidden;}
+.imgDIV_left,.imgDIV_right{z-index:9;position: absolute;top:0;width:30px;height:107px;background: url("../images/icon.png");}
+.imgDIV_left{left: 0;background-position:-134px 0; }
+.imgDIV_right{right:0;background-position:-169px 0;}
+.imgDIV_left:hover{background-position:-134px -112px;}
+.imgDIV_right:hover{background-position:-169px -112px;}
+.imgDIV ul{width:500%;}
+.imgDIV li{position:relative;width:120px;height:75px;float:left;margin-left: 20px;margin-top: 10px;border-radius: 5px;padding:5px 8px 5px 8px; }
+.current:after{content:"";position: absolute;width:0;height:0;top:-10px;left:50%;margin-left: -5px;border-width:5px;border-color:#fff #fff #2e99e6;border-style: solid;display: block;}
+.current{background-color:#2e99e6; }
+.imgDIV ul li a img{width: 100%;height:100%;}
